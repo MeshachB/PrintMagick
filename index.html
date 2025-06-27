@@ -1,0 +1,74 @@
+<!-- PrintMagick Updated Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Magick</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-top">
+      <img src="https://via.placeholder.com/60" alt="Print Magick Logo" class="logo">
+      <h1>Print Magick</h1>
+    </div>
+    <p>Bring your brand to life with creative custom prints</p>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">Services
+          <ul class="dropdown-content">
+            <li><a href="#upload">T-Shirt Printing</a></li>
+            <li><a href="#artwork">Artwork Help</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">About
+          <ul class="dropdown-content">
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload">
+      <h2>Upload Your Design</h2>
+      <div class="upload-section">
+        <label for="upload">Choose a file to upload:</label>
+        <input type="file" id="upload" name="design">
+        <button onclick="submitDesign()">Submit Design</button>
+      </div>
+    </section>
+
+    <section id="artwork">
+      <h2>Need Artwork Help?</h2>
+      <div class="request-section">
+        <label for="description">Describe what you want designed:</label>
+        <textarea id="description" rows="4" placeholder="Tell us your vision..."></textarea>
+        <button onclick="requestArtwork()">Request Custom Artwork (Additional Fee)</button>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>Why Print Magick?</h2>
+      <p>We combine creativity, professionalism, and personal service to offer magical results without the fluff. Whether you're a business, church group, or team — we’ve got the tools to make your merch pop.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:hello@printmagick.com">hello@printmagick.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Print Magick | Custom DTG Printing with Heart
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

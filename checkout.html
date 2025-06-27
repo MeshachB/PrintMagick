@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | Print Magick</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-top">
+      <img src="https://via.placeholder.com/60" alt="Print Magick Logo" class="logo" />
+      <h1>Checkout</h1>
+    </div>
+    <p>Finalize your order below</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Order Summary</h2>
+      <p>You're almost there! Please provide your information to complete your custom order.</p>
+      <div class="checkout-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" />
+
+        <label for="quantity">Number of Shirts:</label>
+        <input type="number" id="quantity" min="1" />
+
+        <label for="upload-final">Upload Final Design:</label>
+        <input type="file" id="upload-final" />
+
+        <button onclick="submitCheckout()">Place Order</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Print Magick | Magical DTG Printing, Delivered
+  </footer>
+
+  <script>
+    function submitCheckout() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const qty = document.getElementById('quantity').value;
+      if (!name || !email || !qty) {
+        alert('Please fill out all required fields before placing your order.');
+        return;
+      }
+      alert('🎉 Order placed successfully! We’ll contact you via email.');
+    }
+  </script>
+</body>
+</html>
+
