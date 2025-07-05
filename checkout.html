@@ -18,7 +18,8 @@
   <main>
     <section>
       <h2>Order Summary</h2>
-      <p>You're almost there! Please provide your information to complete your custom order.</p>
+      <p>Please complete the details below to place your custom print order.</p>
+
       <div class="checkout-form">
         <label for="name">Full Name:</label>
         <input type="text" id="name" />
@@ -32,7 +33,10 @@
         <label for="upload-final">Upload Final Design:</label>
         <input type="file" id="upload-final" />
 
-        <button onclick="submitCheckout()">Place Order</button>
+        <!-- 🔁 Swap this with your real Stripe Payment Link when ready -->
+        <a href="https://buy.stripe.com/test_xxxxxxxxxxxxxxx" target="_blank">
+          <button>Pay Now</button>
+        </a>
       </div>
     </section>
   </main>
@@ -40,19 +44,6 @@
   <footer>
     &copy; 2025 Print Magick | Magical DTG Printing, Delivered
   </footer>
-
-  <script>
-    function submitCheckout() {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const qty = document.getElementById('quantity').value;
-      if (!name || !email || !qty) {
-        alert('Please fill out all required fields before placing your order.');
-        return;
-      }
-      alert('🎉 Order placed successfully! We’ll contact you via email.');
-    }
-  </script>
 </body>
 </html>
 
