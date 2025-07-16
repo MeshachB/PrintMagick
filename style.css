@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 body {
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1021.cur'), auto;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
@@ -238,4 +239,30 @@ footer {
   main {
     padding: 1rem;
   }
+}
+/* 🎨 Slideshow Section */
+.slideshow-section {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.slide-img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.8s ease-in-out;
+  border-radius: 16px;
+}
+
+.slide-img.active {
+  display: block;
 }
