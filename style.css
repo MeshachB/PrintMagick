@@ -348,3 +348,15 @@ footer {
     transform: scale(2);
   }
 }
+/* === CUSTOM TEXT GLOW STYLES === */
+.glow-yellow {
+  color: #FFD700;
+  text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFA500;
+  font-weight: 700;
+}
+
+.poppy-blue {
+  color: #00BFFF;
+  text-shadow: 0 0 8px #00BFFF, 0 0 12px #1E90FF;
+  font-weight: 700;
+}
