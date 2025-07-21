@@ -5,8 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #0A0A12; /* dark spacey blue */
-  color: #EAEAEA;
+  background-color: #ffffff;/* dark spacey blue */
+  color: #1C1C1C;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -15,8 +15,9 @@ body {
 
 /* ========== HEADER ========== */
 header.site-header {
-  background: linear-gradient(135deg, #0A0A12, #001F3F, #0033A0);
-  color: #FFD700;
+background: #ffffff;
+color: #1C1C1C;
+
   padding: 2rem 1rem 1rem;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
