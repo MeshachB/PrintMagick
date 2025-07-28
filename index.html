@@ -1,84 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Print Magick</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- ✅ Header Block with Logo and Tagline -->
-  <header class="site-header">
-    <img src="./images/logo.png" alt="Print Magick Logo" class="logo" />
-    <h1 class="glow-yellow">Print Magick</h1>
-    <p class="poppy-blue">Where Creativity Sparks to Life</p>
-  </header>
+  <div class="container">
+    <header class="header">
+      <h1 class="title glow">🪄 Print Magick</h1>
+      <p class="subtitle">Where Creativity Sparks to Life</p>
+    </header>
 
-  <!-- ✅ Navigation -->
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="#">Home</a></li>
-      <li class="dropdown">Services
-        <ul class="dropdown-content">
-          <li><a href="#upload">T-Shirt Printing</a></li>
-          <li><a href="#artwork">Artwork Help</a></li>
-          <li><a href="checkout.html">Checkout</a></li>
+    <section class="card-grid">
+      <div class="card">
+        <h2>👕 DTG Printing Services</h2>
+        <p>
+          High-quality direct-to-garment prints on shirts, hoodies, and more. Upload your design or request original artwork.
+        </p>
+        <ul>
+          <li>No minimums</li>
+          <li>Local pickup or shipping options</li>
+          <li>Bring-your-own-shirt or use ours</li>
         </ul>
-      </li>
-      <li class="dropdown">About
-        <ul class="dropdown-content">
-          <li><a href="#why">Why Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- ✅ Main Content -->
-  <main>
-    <!-- ✨ Hero Section -->
-    <section class="hero-highlight">
-      <div class="hero-tagline">
-        Whether you're a restaurant owner, clothing brand, or in need of shirts for a family event — we can make the magick happen.
       </div>
-      <div class="hero-image-container">
-        <img src="./images/ydh.png" alt="Custom Shirt Designs by Print Magick" class="hero-image" />
+
+      <div class="card">
+        <h2>🎨 Custom Design Requests</h2>
+        <p>
+          Need a logo, event graphic, or visual concept? Our artists can help bring your idea to life. Let’s collaborate and create something magical.
+        </p>
       </div>
     </section>
 
-    <!-- ✅ Upload Section -->
-    <section id="upload">
-      <h2>Upload Your Design</h2>
-      <div class="upload-section">
-        <label for="upload">Choose a file to upload:</label>
-        <input type="file" id="upload" name="design">
-        <button onclick="submitDesign()">Submit Design</button>
-      </div>
+    <section class="card">
+      <h2>📦 Pricing Options</h2>
+      <ul>
+        <li>Standard Print (Shirt Included): <strong>$25</strong></li>
+        <li>BYO Shirt (Your Shirt): <strong>$15</strong></li>
+        <li>Bulk Orders (10+): <em>Custom Quote</em></li>
+        <li>Custom Design Add-On: <strong>+$10–$20</strong></li>
+      </ul>
     </section>
 
-    <!-- ✅ Artwork Help Section -->
-    <section id="artwork">
-      <h2>Need Artwork Help?</h2>
-      <div class="request-section">
-        <label for="description">Describe what you want designed:</label>
-        <textarea id="description" rows="4" placeholder="Tell us your vision..."></textarea>
-        <button onclick="requestArtwork()">Request Custom Artwork (Additional Fee)</button>
-      </div>
+    <section class="card">
+      <h2>📬 Contact & Orders</h2>
+      <p>
+        DM us on Instagram <strong>@printmagick</strong> <br/>
+        or email <strong>printmagickshop@gmail.com</strong>
+      </p>
+      <p class="note">Online storefront coming soon.</p>
     </section>
 
-    <!-- ✅ Why Us Section -->
-    <section id="why">
-      <h2>Why Print Magick?</h2>
-      <p>We combine creativity, professionalism, and personal service to offer magical results without the fluff. Whether you're a business, church group, or team — we’ve got the tools to make your merch pop.</p>
-    </section>
-
-    <!-- ✅ Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:hello@printmagick.com">YO!@printmagick.com</a></p>
-      <p>Phone: <a href="tel:+1234567890">+1 (910)446-3595</a></p>
-    </section>
-  </main>
+    <footer class="footer">
+      &copy; 2025 Print Magick. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
+
